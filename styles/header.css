@@ -1,0 +1,104 @@
+
+
+/* Grids */
+
+/* Header Grid */
+
+.grid-blog-title {
+    grid-area: blog;
+}
+
+.grid-name-title {
+    grid-area: name;
+}
+
+.header hr {
+    grid-area: line;
+}
+
+.contact-container {
+    grid-area: contact;
+}
+
+.grid-container-header {
+    display: grid;
+    grid-template-columns: 3% 24% 1% 23% auto;
+    grid-template-rows: 2% 85% 12%;
+    grid-template-areas:
+        ". . . . ."
+        " . blog . name contact"
+        "line line line line line";       
+}
+
+/* Contact grid */
+
+.github-icon-container {
+    grid-area: github;
+}
+
+.linkedin-icon-container {
+    grid-area: linkedin;
+}
+
+.image-icon-container {
+    grid-area: image;
+}
+
+.grid-contact {
+    display: grid;
+    grid-template-columns: 42% 4% 10% 4% 10% 16% 8%;
+    grid-template-rows: 20% 20% 15% 20% 20%;
+    grid-template-areas: 
+        ". . . . . . ."
+        ". . . . . image ."
+        ". github . linkedin . image ."
+        ". . . . . image ."
+        ". . . . . . .";
+}
+
+/* Header styling */
+
+.header p{
+    color: white;
+}
+
+.blog-title p{
+    font-size: 11em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+}
+
+.name-title {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 16%;
+}
+
+.name-title p {
+    font-size: 3em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+
+.header hr {
+    height: 10px;
+    width: 100%;
+    background-color: white;
+}
+
+.github-icon-container img{
+    height: 100%;
+    width: 100%;
+}
+
+.linkedin-icon-container img{
+    height: 100%;
+    width: 100%;
+}
+
+.image-icon-container img{
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+}
