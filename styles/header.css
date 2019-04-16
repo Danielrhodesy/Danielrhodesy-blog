@@ -63,19 +63,36 @@
 }
 
 .blog-title p{
-    font-size: 11em;
+    font-size: 9vw;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
 }
 
+/* Name Grid */
+
+.name-title p {
+    grid-area: name-place
+}
+
+.grid-name-title {
+    display: grid;
+    grid-template-rows: 55% 20% 25%;
+    grid-template-areas: 
+        "."
+        "name-place"
+        "."; 
+}
+
+/* Name Styling  */
+
 .name-title {
-    display: flex;
-    align-items: flex-end;
-    margin-bottom: 16%;
+    /* display: flex;
+    align-items: flex-end; */
+    /* margin-bottom: 3.2vw; */
 }
 
 .name-title p {
-    font-size: 3em;
+    font-size: 2vw;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
 }
