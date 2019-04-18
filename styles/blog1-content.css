@@ -12,7 +12,7 @@
 }
 
 .blog1-page-grid {
-    display: grid;
+    display: none;
     grid-template-columns: 10% 10% auto 10%;
     grid-template-rows: 15% 20% auto;
     grid-template-areas: 

@@ -17,14 +17,17 @@ $(document).ready(function() {
 //     })
 // }
 
+function changeDisplay () {
+    $('#blogid')
+}
 
-
+changeDisplay()
 
 function animsitionCode (){
     $('#blog1id').click(function(){
         $('.main').fadeOut(function(){
             $('.main').hide(function(){
-                $('.blog1-page, grid-main').fadeIn(400, function(){
+                $('.blog1-page').fadeIn(400, function(){
                     console.log('fade in working');
                     
                 })
@@ -39,7 +42,7 @@ animsitionCode()
 function backAnimsitionCode (){
     $('#backButton').click(function(){
         $('.blog1-page').fadeOut(function(){
-            $('.blog1-page').hide(function(){
+            $('.grid-container-main').hide(function(){
                 $('.main').fadeIn(400, function(){
                     console.log('fade in working');
                     
