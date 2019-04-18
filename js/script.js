@@ -17,26 +17,25 @@ $(document).ready(function() {
 //     })
 // }
 
-function changeDisplay () {
-    $('#blogid')
-}
 
-changeDisplay()
 
-function animsitionCode (){
-    $('#blog1id').click(function(){
-        $('.main').fadeOut(function(){
+function animsitionCode (blogNum, newPage, newPageGrid){
+
+
+
+    $(blogNum).click(function(){
+        $('.main').fadeOut(200, function(){
             $('.main').hide(function(){
-                $('.blog1-page').fadeIn(400, function(){
-                    console.log('fade in working');
-                    
-                })
+                $(newPage).fadeIn(200)
+                    $(newPageGrid).css("display", "grid")
             })
         })
     });
 };
 
-animsitionCode()
+animsitionCode('#blog1id', '.blog1-page', '.blog1-page-grid')
+animsitionCode('#blog2id', '.blog1-page', '.blog1-page-grid')
+animsitionCode('#blog3id', '.blog1-page', '.blog1-page-grid')
 
 
 function backAnimsitionCode (){
