@@ -46,7 +46,7 @@
 
 .grid-contact {
     display: grid;
-    grid-template-columns: 42% 4% 10% 4% 10% 16% 8%;
+    grid-template-columns: 39% 5% 10% 5% 10% 17% 8%;
     grid-template-rows: 20% 20% 15% 20% 20%;
     grid-template-areas: 
         ". . . . . . ."
@@ -84,12 +84,6 @@
 }
 
 /* Name Styling  */
-
-.name-title {
-    /* display: flex;
-    align-items: flex-end; */
-    /* margin-bottom: 3.2vw; */
-}
 
 .name-title p {
     font-size: 2vw;

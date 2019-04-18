@@ -17,7 +17,7 @@
 .grid-container {
     display: grid;
     grid-template-columns: 8% auto 8%;
-    grid-auto-rows: 3% 15vw auto;
+    grid-template-rows: 3% 15vw auto;
     grid-template-areas:
         ". . ."
         ". header ."

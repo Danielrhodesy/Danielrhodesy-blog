@@ -1,6 +1,142 @@
 
-.main {
-    background-color: aqua;
-    width: 100%;
-    height: 10vw;
+/* Main Grid */
+
+.blog1-grid{
+    grid-area: blog1;
 }
+
+.blog2-grid{
+    grid-area: blog2;
+}
+
+.blog3-grid{
+    grid-area: blog3;
+}
+
+
+.grid-container-main {
+    display: grid;
+    grid-template-columns: 15% 20% 5% 20% 5% 20% 15%;
+    grid-template-rows: 5vw 26vw auto;
+    grid-template-areas:
+        ". . . . . . ."
+        ". blog1 . blog2 . blog3 ."
+        ". . . . . . .";
+}
+
+
+/* Each blog grid */
+
+
+
+.tline {
+    grid-area: tline;
+}
+
+.blog1 {
+    grid-area: blog1;
+}
+
+.blog2 {
+    grid-area: blog2;
+}
+
+.blog3 {
+    grid-area: blog3;
+}
+
+.bline {
+    grid-area: bline;
+}
+
+.blog1-grid {
+    display: grid;
+    grid-template-columns: 2% 96% 2%;
+    grid-template-rows: 1vw 3vw 18vw 3vw 1vw;
+    grid-template-areas: 
+        "tline tline tline"
+        ". . ."
+        ". blog1 ."
+        ". . ."
+        "bline bline bline";
+
+}
+
+.blog2-grid {
+    display: grid;
+    grid-template-columns: 2% 96% 2%;
+    grid-template-rows: 1vw 3vw 18vw 3vw 1vw;
+    grid-template-areas: 
+        "tline tline tline"
+        ". . ."
+        ". blog2 ."
+        ". . ."
+        "bline bline bline";
+
+}
+
+.blog3-grid {
+    display: grid;
+    grid-template-columns: 2% 96% 2%;
+    grid-template-rows: 1vw 3vw 18vw 3vw 1vw;
+    grid-template-areas: 
+        "tline tline tline"
+        ". . ."
+        ". blog3 ."
+        ". . ."
+        "bline bline bline";
+
+}
+
+/* Blog Styling */
+
+.tline-style {
+    height: 10px;
+    width: 100%;
+    background-color: #4F4F4F;
+    border: 0px;
+}
+
+
+.bline-style {
+    height: 10px;
+    width: 100%;
+    background-color: #4F4F4F;
+    border: 0px;
+}
+
+
+
+.blog-style p {
+    
+    padding: 70% 0% 0% 10%;
+    font-size: 3vw;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+.blog-style {
+    transition: color 2s;
+    transition: background-color 0.7s ease-out;
+    background-color: #EDEDED;
+    text-decoration: none;
+    color: black;
+}
+
+
+.blog1:hover {
+    background-color: #4392F1;
+    color: white;
+}
+
+.blog2:hover {
+    background-color: #F06449;
+    color: white;
+}
+
+.blog3:hover {
+    background-color: #F9C80E;
+    color: white;
+}
+
+
