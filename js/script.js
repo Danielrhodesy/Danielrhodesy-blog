@@ -19,7 +19,7 @@ $(document).ready(function() {
 
 
 
-function animsitionCode (blogNum, newPage, newPageGrid){
+function animsitionCode (blogNum, newPage, newPageGrid, gridsize){
 
 
 
@@ -27,31 +27,35 @@ function animsitionCode (blogNum, newPage, newPageGrid){
         $('.main').fadeOut(200, function(){
             $('.main').hide(function(){
                 $(newPage).fadeIn(200)
-                    $(newPageGrid).css("display", "grid")
-            })
+                $(newPageGrid).css("display", "grid")
+                $('.grid-container-size').css("height", gridsize, function(){
+                    console.log('test')
+                })
+            })  
         })
     });
 };
 
-animsitionCode('#blog1id', '.blog1-page', '.blog1-page-grid')
-animsitionCode('#blog2id', '.blog1-page', '.blog1-page-grid')
+animsitionCode('#blog1id', '.blog1-page', '.blog1-page-grid', '70vw')
+animsitionCode('#blog2id', '.blog2-page', '.blog2-page-grid', '115vw')
 animsitionCode('#blog3id', '.blog1-page', '.blog1-page-grid')
 
 
-function backAnimsitionCode (){
-    $('#backButton').click(function(){
-        $('.blog1-page').fadeOut(function(){
+function backAnimsitionCode (backbtn, oldpage){
+    $(backbtn).click(function(){
+        $(oldpage).fadeOut(function(){
             $('.grid-container-main').hide(function(){
-                $('.main').fadeIn(400, function(){
-                    console.log('fade in working');
-                    
-                })
+                $('.grid-container-size').css("height", "50vw")
+                $('.main').fadeIn(400)
+              
+               
             })
         })
     });
 };
 
-backAnimsitionCode()
+backAnimsitionCode('#backButton','.blog1-page')
+backAnimsitionCode('#backButton2', '.blog2-page')
 
 
 

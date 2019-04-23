@@ -1,0 +1,25 @@
+
+
+.title2 {
+    grid-area: title2; 
+ }
+ 
+ .back-button {
+     grid-area: backbtn;
+ }
+ 
+ .blog2-content-block {
+     grid-area: block2;
+ }
+ 
+ 
+ 
+ .blog2-page-grid {
+     display: none;
+     grid-template-columns: 10% 10% auto 10%;
+     grid-template-rows: 10% 15% auto;
+     grid-template-areas: 
+         "backbtn . ."
+         ". . title2"
+         ". block2 block2";
+ }

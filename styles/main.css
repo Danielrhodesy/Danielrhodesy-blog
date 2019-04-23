@@ -3,8 +3,9 @@
 
 @import 'body-grid.css';
 @import 'header.css';
-@import 'blog-content.css';
+@import 'blog-blocks.css';
 @import 'blog1-content.css';
+@import 'blog2-content.css';
 
 
 body {

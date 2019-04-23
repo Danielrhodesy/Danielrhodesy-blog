@@ -11,10 +11,12 @@
     grid-area: block;
 }
 
+
+
 .blog1-page-grid {
     display: none;
     grid-template-columns: 10% 10% auto 10%;
-    grid-template-rows: 15% 20% auto;
+    grid-template-rows: 10% 15% auto;
     grid-template-areas: 
         "backbtn . ."
         ". . title"
@@ -27,7 +29,7 @@
 
 .back-button img{
     margin-top: 1vw;
-    height: 60%;
+    height: 4.5vw;
     width: 3vw;
 }
 
@@ -35,13 +37,13 @@
     /* background-color: aqua; */
 }
 
-.title {
+.title-style {
     font-family: 'Raleway', sans-serif;
     font-size: 2vw;
     color: white;
 }
 
-.blog-content-block {
+.blog-content-block-style {
     font-family: 'Noto Sans TC', sans-serif;
     color: white;
     font-size: 1.3vw;
