@@ -13,14 +13,19 @@
     grid-area: blog3;
 }
 
+.blog4-grid{
+    grid-area: blog4;
+}
 
 .grid-container-main {
     display: grid;
     grid-template-columns: 15% 20% 5% 20% 5% 20% 15%;
-    grid-template-rows: 5vw 26vw auto;
+    grid-template-rows: 5vw 26vw 4vw 26vw 6vw;
     grid-template-areas:
         ". . . . . . ."
         ". blog1 . blog2 . blog3 ."
+        ". . . . . . ."
+        ". blog4 . . . . ."
         ". . . . . . .";
 }
 
@@ -44,6 +49,11 @@
 .blog3 {
     grid-area: blog3;
 }
+
+.blog4 {
+    grid-area: blog4;
+}
+
 
 .bline {
     grid-area: bline;
@@ -83,6 +93,19 @@
         "tline tline tline"
         ". . ."
         ". blog3 ."
+        ". . ."
+        "bline bline bline";
+
+}
+
+.blog4-grid {
+    display: grid;
+    grid-template-columns: 2% 96% 2%;
+    grid-template-rows: 1vw 3vw 18vw 3vw 1vw;
+    grid-template-areas: 
+        "tline tline tline"
+        ". . ."
+        ". blog4 ."
         ". . ."
         "bline bline bline";
 
@@ -138,5 +161,11 @@
     background-color: #F9C80E;
     color: white;
 }
+
+.blog4:hover {
+    background-color: #F18F01;
+    color: white;
+}
+
 
 
