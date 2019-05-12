@@ -17,6 +17,14 @@
     grid-area: blog4;
 }
 
+.blog5-grid{
+    grid-area: blog5;
+}
+
+.blog6-grid{
+    grid-area: blog6;
+}
+
 .grid-container-main {
     display: grid;
     grid-template-columns: 15% 20% 5% 20% 5% 20% 15%;
@@ -25,7 +33,7 @@
         ". . . . . . ."
         ". blog1 . blog2 . blog3 ."
         ". . . . . . ."
-        ". blog4 . . . . ."
+        ". blog4 . blog5 . blog6 ."
         ". . . . . . .";
 }
 
@@ -54,6 +62,13 @@
     grid-area: blog4;
 }
 
+.blog5 {
+    grid-area: blog5;
+}
+
+.blog6 {
+    grid-area: blog6;
+}
 
 .bline {
     grid-area: bline;
@@ -106,6 +121,32 @@
         "tline tline tline"
         ". . ."
         ". blog4 ."
+        ". . ."
+        "bline bline bline";
+
+}
+
+.blog5-grid {
+    display: grid;
+    grid-template-columns: 2% 96% 2%;
+    grid-template-rows: 1vw 3vw 18vw 3vw 1vw;
+    grid-template-areas: 
+        "tline tline tline"
+        ". . ."
+        ". blog5 ."
+        ". . ."
+        "bline bline bline";
+
+}
+
+.blog6-grid {
+    display: grid;
+    grid-template-columns: 2% 96% 2%;
+    grid-template-rows: 1vw 3vw 18vw 3vw 1vw;
+    grid-template-areas: 
+        "tline tline tline"
+        ". . ."
+        ". blog6 ."
         ". . ."
         "bline bline bline";
 
@@ -167,5 +208,13 @@
     color: white;
 }
 
+.blog5:hover {
+    background-color: #4BC6B9;
+    color: white;
+}
 
+.blog6:hover {
+    background-color: #540D6E;
+    color: white;
+}
 
